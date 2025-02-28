@@ -68,7 +68,7 @@ class _ContactPageState extends State<ContactPage> {
                   "Message",
                   maxLines: 3,
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 2),
                 ElevatedButton(
                   onPressed: _submitForm,
                   style: ElevatedButton.styleFrom(
