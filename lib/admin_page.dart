@@ -104,7 +104,7 @@ class _AdminPageState extends State<AdminPage> {
                               icon: Icon(Icons.delete, color: Colors.red),
                               onPressed: () {
                                 FirebaseFirestore.instance
-                                    .collection('contacts')
+                                    .collection('contact')
                                     .doc(docId)
                                     .delete();
                                 ScaffoldMessenger.of(context).showSnackBar(
