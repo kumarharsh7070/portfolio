@@ -45,9 +45,30 @@ class _ContactPageState extends State<ContactPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Contact Us"),
         backgroundColor: Color(0xFF012A4A),
+        centerTitle: true, // ✅ Centers the title
+        title: Text(
+          "Contact us",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 22, // ✅ Slightly larger font
+            fontWeight: FontWeight.bold, // ✅ Makes it bold
+            letterSpacing: 1.2, // ✅ Adds spacing for better readability
+            shadows: [
+              Shadow(
+                color: Colors.black38, // ✅ Adds subtle shadow for depth
+                blurRadius: 3,
+                offset: Offset(1, 1),
+              ),
+            ],
+          ),
+        ),
+        elevation: 4, // ✅ Adds slight shadow below AppBar
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(15)),
+        ),
       ),
+
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),

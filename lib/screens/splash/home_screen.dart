@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // List of pages for bottom navigation
   final List<Widget> _pages = [
-    HomeContent(), // Home Page Content
+    HomeContentPage(), // Home Page Content
     GalleryPage(), // Gallery Page
     AboutPage(), // About Page
     ContactPage(),
@@ -126,10 +126,6 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.contact_mail),
             label: isHindi ? "संपर्क करें" : "Contact",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.admin_panel_settings),
-            label: isHindi ? "प्रशासन" : "Admin",
           ),
         ],
       ),
