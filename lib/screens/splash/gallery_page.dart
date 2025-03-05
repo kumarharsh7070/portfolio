@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class GalleryPage extends StatelessWidget {
+  const GalleryPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +47,7 @@ class GalleryPage extends StatelessWidget {
                   _buildVideoCard(
                     title: "Watch Videos",
                     videoThumbnail: "assets/image5.jpg",
-                    url: "https://youtu.be/6Qnelf1Vztc?si=-xp5Hqt0VJKKNP0",
+                    url: "https://ashwanikumar.org/#/video-gallery",
                     icon: Icons.play_circle_fill,
                     buttonText: "Visit Video Gallery",
                     cardHeight: cardHeight,

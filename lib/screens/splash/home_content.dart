@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class HomeContentPage extends StatefulWidget {
+  const HomeContentPage({super.key});
+
   @override
   _HomeContentPageState createState() => _HomeContentPageState();
 }
@@ -18,8 +20,9 @@ class _HomeContentPageState extends State<HomeContentPage> {
   final List<Map<String, String>> helpItems = [
     {
       "image": "assets/sup1.jpg",
-      "title": "Healthcare Support",
-      "description": "Ensuring accessible medical care for everyone.",
+      "title": "Helping Hands",
+      "description":
+          "money, food, or other material goods donated to people living in poverty",
     },
     {
       "image": "assets/sup2.jpg",
@@ -30,11 +33,6 @@ class _HomeContentPageState extends State<HomeContentPage> {
       "image": "assets/sup3.jpg",
       "title": "Youth Empowerment",
       "description": "Creating opportunities for the next generation.",
-    },
-    {
-      "image": "assets/help4.jpg",
-      "title": "Employment Growth",
-      "description": "Boosting job creation and economic development.",
     },
   ];
 

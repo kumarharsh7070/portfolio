@@ -4,6 +4,8 @@ import 'dart:math';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatefulWidget {
+  const AboutPage({super.key});
+
   @override
   _AboutPageState createState() => _AboutPageState();
 }
@@ -377,23 +379,19 @@ Widget _buildSocialMediaLinks() {
         children: [
           _socialIcon(
             FontAwesomeIcons.facebook,
-            'https://www.facebook.com/YourPage',
+            'https://www.facebook.com/share/1ENGY9SK7D/',
           ),
           SizedBox(width: 10),
           _socialIcon(
             FontAwesomeIcons.twitter,
-            'https://twitter.com/YourProfile',
+            'https://x.com/ipankajsinha88?t=CnXTHubADmxu2EMk0i_uow&s=09',
           ),
           SizedBox(width: 10),
           _socialIcon(
             FontAwesomeIcons.instagram,
-            'https://www.instagram.com/YourProfile',
+            'https://www.instagram.com/ipankajsinha?igsh=NHM3ZzIwaGU1M3V2',
           ),
           SizedBox(width: 10),
-          _socialIcon(
-            FontAwesomeIcons.youtube,
-            'https://www.youtube.com/c/YourChannel',
-          ),
         ],
       ),
     ],

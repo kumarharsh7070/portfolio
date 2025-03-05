@@ -7,6 +7,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class AdminPage extends StatefulWidget {
+  const AdminPage({super.key});
+
   @override
   _AdminPageState createState() => _AdminPageState();
 }
@@ -122,7 +124,7 @@ class _AdminPageState extends State<AdminPage> {
                       pw.Divider(),
                     ],
                   );
-                }).toList(),
+                }),
               ],
             );
           },

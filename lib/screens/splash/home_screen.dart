@@ -61,11 +61,25 @@ class _HomeScreenState extends State<HomeScreen> {
                 isHindi ? "अश्विनी कुमार" : "Ashwani Kumar",
                 style: TextStyle(fontSize: 18),
               ),
-              accountEmail: Text("leader@example.com"),
+              accountEmail: Row(
+                children: [
+                  Icon(
+                    Icons.email,
+                    color: Colors.white,
+                    size: 20,
+                  ), // Email icon
+                  SizedBox(width: 5), // Spacing between icon and text
+                  Text(
+                    "aswanikumarpatna@gmail.com",
+                    style: TextStyle(fontSize: 14, color: Colors.white),
+                  ),
+                ],
+              ),
               currentAccountPicture: CircleAvatar(
                 backgroundImage: AssetImage('assets/politician.jpg'),
               ),
             ),
+
             _buildDrawerItem(
               Icons.person,
               isHindi ? "नेता के बारे में" : "About",
